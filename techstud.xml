@@ -1,0 +1,30 @@
+<!--Create table Student (sno , s_name,s_class,s_addr) Teacher (tno, t_name, qualification,
+experience) Student-Teacher has many to many relationship. Using above database Write Application to
+accept a teacher name from user and display the names of students along with subjects to whom
+teacher is teaching.
+-->
+
+Activity_main.xml
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtTeacherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Teacher's Name" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Students" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
